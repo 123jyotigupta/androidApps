@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_gravity="center_vertical"
+
+    tools:context=".mainScreen">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:id = "@+id/logoView"/>
+
+    <EditText
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/nameView"
+        android:layout_below="@+id/logoView"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:password="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/passView"
+        android:layout_below="@+id/nameView"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/passView"
+        android:layout_marginTop="40dp"
+        android:id = "@+id/loginBtn"
+        android:text="Login"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginTop="40dp"
+        android:id = "@+id/signBtn"
+        android:text="Sign Up"/>
+
+</RelativeLayout>
+

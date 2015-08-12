@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/basket_light"
+
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <TextView android:text="Team A"
+        android:textSize="40sp"
+        android:fontFamily="bold"
+        android:textColor="#ff9800"
+        android:layout_gravity="center" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView android:text="0" android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/team_a_score"
+        android:fontFamily="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="70sp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:text="+3 POINTS"
+        android:background="#db9539"
+        android:onClick="plus3PointsTeamA"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:onClick="plus2PointsTeamA"
+        android:background="#db9539"
+        android:text="+2 POINTS"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:onClick="freeThrowPointsTeamA"
+        android:background="#db9539"
+        android:text="FREE THROW"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"></View>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:paddingLeft="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="Team B"
+            android:textSize="40sp"
+            android:fontFamily="bold"
+            android:textColor="#ff9800"
+            android:layout_gravity="center" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:text="0" android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/team_b_score"
+            android:layout_marginTop="20dp"
+            android:textSize="70sp"
+            android:fontFamily="bold"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:text="+3 POINTS"
+            android:background="#db9539"
+            android:onClick="plus3PointsTeamB"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:onClick="plus2PointsTeamB"
+            android:background="#db9539"
+            android:text="+2 POINTS"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:background="#db9539"
+            android:onClick="freeThrowPointsTeamB"
+            android:text="FREE THROW"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetScores"
+        android:layout_marginBottom="30dp"
+        android:background="#db9539"
+        android:text="RESET"/>
+
+</RelativeLayout>
