@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">OrderCoffee</string>
+    <string name="hintText">Name</string>
+    <string name="toppings">TOPPINGS</string>
+    <string name="Whipped_cream">Whipped cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">Quantity</string>
+    <string name="ordertext">Order</string>
+    <string name="toastMsg">You can order up to 100 coffees only.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+   <!-- for making common styles -->
+    <style name="HeaderTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>
